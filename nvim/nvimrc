@@ -100,7 +100,7 @@ inoremap jj <esc>
 
 nnoremap <Tab> :bnext<CR>                       " move to the next buffer
 nnoremap <S-Tab> :bprevious<CR>                 " move to the previous buffer
-nnoremap <C-w> :bd<CR>                          " close the current buffer
+nnoremap <C-w> :bp <BAR> bd #<CR>               " close the current buffer
 
 nnoremap <leader><space> :nohlsearch<CR>        " disable search highlighting
 
