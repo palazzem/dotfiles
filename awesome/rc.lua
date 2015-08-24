@@ -1,3 +1,6 @@
+-- Environment variables
+require("variables")
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -231,9 +234,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
-    awful.key({ modkey, "Control" }, "0", function () awful.util.spawn("xrandr --output HDMI1 --off --output eDP1 --auto") end),
-    awful.key({ modkey, "Control" }, "9", function () awful.util.spawn("xrandr --output HDMI1 --auto --output eDP1 --off") end),
-    awful.key({ modkey, "Control" }, "8", function () awful.util.spawn("xrandr --output HDMI1 --auto --output eDP1 --auto") end),
+    awful.key({ modkey, "Control" }, "0", function () awful.util.spawn("xrandr --output " .. notebook_display .. " --off --output " .. external_display .." --auto") end),
+    awful.key({ modkey, "Control" }, "9", function () awful.util.spawn("xrandr --output " .. notebook_display .. " --auto --output " .. external_display .." --off") end),
+    awful.key({ modkey, "Control" }, "8", function () awful.util.spawn("xrandr --output " .. notebook_display .. " --auto --output " .. external_display .." --auto") end),
     awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
     awful.key({ modkey, "Control" }, "k", function () awful.util.spawn("lock-suspend") end),
 
