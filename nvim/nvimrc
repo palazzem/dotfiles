@@ -135,8 +135,8 @@ let g:jedi#show_call_signatures=1
 
 " ctrlp
 let g:ctrlp_show_hidden=1
-let g:ctrlp_use_caching=0
-let g:ctrlp_custom_ignore = '\v[\/](transpiled)|dist|tmp|node_modules|(\.(swp|git|bak|pyc|DS_Store))$'
+let g:ctrlp_use_caching=1
+let g:ctrlp_custom_ignore = '\v[\/](transpiled)|dist|build|tmp|node_modules|(\.(swp|git|bak|pyc|DS_Store))$'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_max_height = 18
