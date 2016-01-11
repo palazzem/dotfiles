@@ -7,10 +7,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " -------------
 
 if has('vim_starting')
-  set runtimepath+=/home/palazzem/.nvim/bundle/neobundle.vim/
+  set runtimepath+=/home/palazzem/.config/nvim/bundle/neobundle.vim/
 endif
 
-call neobundle#begin(expand('/home/palazzem/.nvim/bundle'))
+call neobundle#begin(expand('/home/palazzem/.config/nvim/bundle'))
 
 " let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
