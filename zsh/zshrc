@@ -11,6 +11,7 @@ ZSH_THEME="norm"
 # shell
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
+EDITOR="nvim"
 
 # plugins
 plugins=(git)
