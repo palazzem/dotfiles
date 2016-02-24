@@ -11,7 +11,10 @@ ZSH_THEME="norm"
 # shell
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
+
+# NeoVim as default editor
 EDITOR="nvim"
+alias vim=nvim
 
 # plugins
 plugins=(git)
@@ -37,6 +40,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source "$HOME/.nvm/nvm.sh"
 
 # system information when opening a new shell
+# or after clearing the screen
 if type archey3 > /dev/null; then
+    alias clear='clear; archey3'
     archey3
 fi
