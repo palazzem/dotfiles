@@ -2,7 +2,7 @@
 PANEL_FIFO=/tmp/bspwm-panel-fifo
 
 # Hardware
-POWERSUPPLY="/sys/class/power_supply/AC0"
+POWERSUPPLY="/sys/class/power_supply/ADP1"
 BATTERY="/sys/class/power_supply/BAT0"
 
 # Refresh times in seconds
