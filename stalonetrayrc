@@ -1,0 +1,6 @@
+# stalonetray configuration file
+background "#282828"
+geometry 10x1-220+1
+grow_gravity E
+icon_gravity E
+icon_size 18
