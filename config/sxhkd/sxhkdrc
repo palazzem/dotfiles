@@ -50,6 +50,15 @@ super + {_,shift + }w
 super + m
     bspc desktop -l next
 
+# keyboard special buttons
+XF86MonBrightness{Down,Up}
+    xbacklight -{dec,inc} 15
+
+XF86Audio{Raise,Lower}Volume
+    amixer set Master 5%{+,-}
+
+XF86AudioMute
+    amixer set Master toggle
 #
 # state/flags
 #
