@@ -23,7 +23,7 @@ bspc config urgent_border_color '#cc241d'
 # loading the background, the hotkey manager and the top bar
 feh --bg-tile "$HOME/.wallpaper/background.png" &
 sxhkd -f 100 &
-panel &
+bspwm_panel &
 
 # loading the system tray bar and the application launcher;
 # we should wait at least 1 second otherwise the panel will
@@ -33,4 +33,4 @@ stalonetray &
 rofi -key-run F12 -key-ssh F11 &
 
 # autostart applications
-$HOME/.config/bspwm/bin/autostart &
+bspwm_autostart &
