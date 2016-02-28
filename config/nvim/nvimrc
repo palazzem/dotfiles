@@ -33,7 +33,8 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'mustache/vim-mustache-handlebars'
 
 " editor improvements
-NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'dkprice/vim-easygrep'
