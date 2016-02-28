@@ -1,8 +1,6 @@
 " globals
 " -------
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
 " NeoBundle: {{
 " -------------
 
@@ -19,7 +17,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " -------------------------------
 
 " colors scheme
-NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'morhetz/gruvbox'
 
 " syntax highlighting
 NeoBundle 'peterhoeg/vim-qml'
@@ -68,7 +66,7 @@ NeoBundleCheck
 
 syntax enable
 set background=dark
-colorscheme base16-default
+colorscheme gruvbox
 
 set nowrap
 set tabstop=4          " number of visual spaces per TAB
