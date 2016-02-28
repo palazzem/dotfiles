@@ -20,6 +20,10 @@ bspc config normal_sticky_border_color '#1d2021'
 bspc config focused_sticky_border_color '#d5c4a1'
 bspc config urgent_border_color '#cc241d'
 
+# preparing rxvt daemon
+xrdb ~/.Xresources
+urxvtd -q -o -f
+
 # loading the background, the hotkey manager and the top bar
 feh --bg-tile "$HOME/.wallpaper/background.png" &
 sxhkd -f 100 &
