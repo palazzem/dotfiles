@@ -13,16 +13,22 @@ CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
 # NeoVim as default editor
-EDITOR="nvim"
+export EDITOR="nvim"
 alias vim=nvim
 
 # plugins
 plugins=(git)
 
+# using oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Python
+# adding global local/bin folder
+PATH=/usr/local/bin:$PATH
+
+# adding local/bin folder
+PATH=$PATH:$HOME/.local/bin
+
+# Python virtualenvwrapper
 source virtualenvwrapper_lazy.sh
 
 # exports all installed python version (via Pythonz) to
@@ -34,7 +40,7 @@ then
 fi
 
 # Heroku binary
-export PATH="/usr/local/heroku/bin:$PATH"
+PATH="/usr/local/heroku/bin:$PATH"
 
 # Node Version Manager
 source "$HOME/.nvm/nvm.sh"
@@ -45,3 +51,5 @@ if type archey3 > /dev/null; then
     alias clear='clear; archey3'
     archey3
 fi
+
+export PATH
