@@ -21,7 +21,7 @@ bspc config focused_sticky_border_color '#d5c4a1'
 bspc config urgent_border_color '#cc241d'
 
 # loading the background, the hotkey manager and the top bar
-feh --bg-tile "$HOME/.wallpaper/rabbits.png" &
+feh --bg-tile "$HOME/.wallpaper/background.png" &
 sxhkd -f 100 &
 panel &
 
