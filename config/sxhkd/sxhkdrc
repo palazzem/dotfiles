@@ -74,8 +74,8 @@ XF86AudioMute
 #
 
 # toggle the window state
-super + {s,f}
-    bspc window -t '{floating,fullscreen}'
+super + {s,f,t}
+    bspc window -t '{floating,fullscreen,sticky}'
 
 #
 # focus/swap
