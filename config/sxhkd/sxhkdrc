@@ -50,6 +50,16 @@ super + {_,shift + }w
 super + m
     bspc desktop -l next
 
+# monitor settings
+super + control + 8
+    xrandr --output eDP1 --auto --output HDMI1 --off
+
+super + control + 9
+    xrandr --output eDP1 --auto --output HDMI1 --auto
+
+super + control + 0
+    xrandr --output eDP1 --off --output HDMI1 --auto
+
 # keyboard special buttons
 XF86MonBrightness{Down,Up}
     xbacklight -{dec,inc} 15
