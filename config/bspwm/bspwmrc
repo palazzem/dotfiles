@@ -28,7 +28,7 @@ xrdb ~/.Xresources
 urxvtd -q -o -f
 
 # loading the background, the hotkey manager and the top bar
-feh --bg-tile "$HOME/.wallpaper/background.png" &
+feh --bg-scale "$HOME/.wallpaper/background.png" &
 sxhkd -f 100 &
 bspwm_panel &
 
