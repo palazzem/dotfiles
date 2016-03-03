@@ -28,6 +28,10 @@ PATH=/usr/local/bin:$PATH
 # adding local/bin folder
 PATH=$PATH:$HOME/.local/bin
 
+# Go
+export GOPATH="$HOME/programs/go"
+PATH="$PATH:$GOPATH/bin"
+
 # Python virtualenvwrapper
 source virtualenvwrapper_lazy.sh
 
