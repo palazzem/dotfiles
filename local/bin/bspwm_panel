@@ -27,7 +27,7 @@ bspc control --subscribe > "$PANEL_FIFO" &
 clock -sf 'TIME%d/%m/%y, %a %H:%M' > "$PANEL_FIFO" &
 
 # battery
-BATTERY_PRESENT=$(acpi | grep -o 'No support for device type')
+BATTERY_PRESENT=$(acpi | grep -o 'Battery 0')
 if [[ ! -z "$BATTERY_PRESENT" ]]; then
     while true; do
         BATT_LEVEL=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
