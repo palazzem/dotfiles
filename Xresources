@@ -1,4 +1,5 @@
 ! clean up urxvt, add keybinds
+URxvt.termName: xterm-256color
 URxvt.intensityStyles: false
 URxvt.scrollBar: false
 
