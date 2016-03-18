@@ -40,7 +40,7 @@ if [[ ! -z "$BATTERY_PRESENT" ]]; then
                 BATT_ICON=$ICON_BATTERY_HALF
             elif [[ $BATT_LEVEL -ge 20 && $BATT_LEVEL -lt 40 ]]; then
                 BATT_ICON=$ICON_BATTERY_QUARTER
-            elif [[ $BATT_LEVEL -lt 10 && $BATT_LEVEL -lt 20 ]]; then
+            elif [[ $BATT_LEVEL -ge 10 && $BATT_LEVEL -lt 20 ]]; then
                 BATT_ICON=$ICON_BATTERY_EMPTY
             elif [[ $BATT_LEVEL -lt 10 ]]; then
                 BATT_ICON=$ICON_BATTERY_DYING
