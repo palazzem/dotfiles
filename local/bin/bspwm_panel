@@ -21,7 +21,7 @@ mkfifo "$PANEL_FIFO"
 
 # set up bspwm to not overlap the panel
 bspc config top_padding "$PANEL_HEIGHT"
-bspc control --subscribe > "$PANEL_FIFO" &
+bspc subscribe > "$PANEL_FIFO" &
 
 # date and time
 clock -sf 'TIME%d/%m/%y, %a %H:%M' > "$PANEL_FIFO" &
