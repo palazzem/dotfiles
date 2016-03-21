@@ -44,7 +44,7 @@ super + alt + Escape
 
 # close and kill
 super + {_,shift + }w
-    bspc window -{c,k}
+    bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
 super + m
@@ -73,9 +73,9 @@ XF86AudioMute
 # state/flags
 #
 
-# toggle the window state
+# toggle the node state
 super + {s,f,t}
-    bspc window -t '{floating,fullscreen,sticky}'
+    bspc node -t '{floating,fullscreen,sticky}'
 
 #
 # focus/swap
@@ -83,19 +83,19 @@ super + {s,f,t}
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
-    bspc window -{f,s} {west,south,north,east}
+    bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
-    bspc window -f @{parent,brother,first,second}
+    bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node
 super + {_,shift + }Tab
-    bspc window -f {next,prev}
+    bspc node -f {next,prev}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-    bspc {desktop -f,window -d} '^{1-9,10}'
+    bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
 # resize tiled/floating
@@ -103,13 +103,13 @@ super + {_,shift + }{1-9,0}
 
 # expand the tiled space in the given direction
 super + alt + {h,j,k,l}
-    bspc window {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+    bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
 
 # contract the tiled space in the given direction
 super + alt + shift + {h,j,k,l}
-    bspc window {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+    bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
 
-# move a floating window
+# move a floating node
 super + control + {Left,Down,Up,Right}
     xdo move {-x -20,-y +20,-y -20,-x +20}
 
