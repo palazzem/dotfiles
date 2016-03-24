@@ -57,3 +57,5 @@ if type archey3 > /dev/null; then
 fi
 
 export PATH
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
