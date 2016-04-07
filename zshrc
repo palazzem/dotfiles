@@ -46,6 +46,9 @@ fi
 # Heroku binary
 PATH="/usr/local/heroku/bin:$PATH"
 
+# Hashicorp tools
+PATH="$HOME/programs/packer/bin:$PATH"
+
 # Node Version Manager
 source "$HOME/.nvm/nvm.sh"
 
