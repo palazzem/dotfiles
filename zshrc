@@ -48,6 +48,7 @@ PATH="/usr/local/heroku/bin:$PATH"
 
 # Hashicorp tools
 PATH="$HOME/programs/packer/bin:$PATH"
+PATH="$HOME/programs/terraform/bin:$PATH"
 
 # Node Version Manager
 source "$HOME/.nvm/nvm.sh"
