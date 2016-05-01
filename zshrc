@@ -63,3 +63,9 @@ fi
 export PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/palazzem/programs/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/palazzem/programs/google-cloud-sdk/completion.zsh.inc'
