@@ -34,6 +34,13 @@ super + control + l
 super + control + k
     xlock -mode blank & sleep 1 && systemctl suspend
 
+# rofi
+F12
+    rofi -show run
+
+F11
+    rofi -show ssh
+
 #
 # bspwm hotkeys
 #

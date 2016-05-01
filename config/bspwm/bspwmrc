@@ -37,7 +37,6 @@ bspwm_panel &
 # overlap the stalonetray bar
 sleep 1
 stalonetray &
-rofi -key-run F12 -key-ssh F11 &
 
 # autostart applications
 bspwm_autostart &
