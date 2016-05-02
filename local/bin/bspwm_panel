@@ -3,6 +3,7 @@
 # loading configurations
 . panel_config
 . panel_colors
+. custom_config
 
 PANEL_WM_NAME=bspwm_panel
 
