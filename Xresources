@@ -28,8 +28,8 @@ URxvt.internalBorder: 25
 
 ! make otf / ttf fonts look pretty.  does not matter if you are using a bitmap font.
 Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
@@ -42,31 +42,31 @@ URxvt.matcher.button: 1
 URxvt.matcher.rend.0: Uline Bold fg5
 
 ! colors
-*.cursorColor:  #ebdbb2
+*.cursorColor: #ebdbb2
 *.background: #282828
 *.foreground: #ebdbb2
-*.color0:  #282828
-*.color8:  #928374
-*.color1:  #cc241d
-*.color9:  #fb4934
-*.color2:  #98971a
+*.color0: #282828
+*.color8: #928374
+*.color1: #cc241d
+*.color9: #fb4934
+*.color2: #98971a
 *.color10: #b8bb26
-*.color3:  #d79921
+*.color3: #d79921
 *.color11: #fabd2f
-*.color4:  #458588
+*.color4: #458588
 *.color12: #83a598
-*.color5:  #b16286
+*.color5: #b16286
 *.color13: #d3869b
-*.color6:  #689d6a
+*.color6: #689d6a
 *.color14: #8ec07c
-*.color7:  #a89984
+*.color7: #a89984
 *.color15: #ebdbb2
 
 ! fixing 256 color stuff
-*.color24:  #076678
-*.color66:  #427b58
-*.color88:  #9d0006
-*.color96:  #8f3f71
+*.color24: #076678
+*.color66: #427b58
+*.color88: #9d0006
+*.color96: #8f3f71
 *.color100: #79740e
 *.color108: #8ec07c
 *.color109: #83a598
@@ -95,9 +95,9 @@ URxvt.matcher.rend.0: Uline Bold fg5
 *.color250: #d5c4a1
 
 ! ROFI color theme
-rofi.color-enabled:                  true
-rofi.color-normal:                   argb:a02f1e2e, #b4b4b4, argb:a02f1e2e, argb:54815ba4, #ffffff
-rofi.color-urgent:                   argb:272f1e2e, #ef6155, argb:2f2f1e2e, argb:54815ba4, #ef6155
-rofi.color-active:                   argb:272f1e2e, #815ba4, argb:2f2f1e2e, argb:54815ba4, #815ba4
-rofi.color-window:                   #2f1e2e, argb:36ef6155, argb:2fef6155
-rofi.separator-style:                dash
+rofi.color-enabled: true
+rofi.color-normal: argb:a02f1e2e, #b4b4b4, argb:a02f1e2e, argb:54815ba4, #ffffff
+rofi.color-urgent: argb:272f1e2e, #ef6155, argb:2f2f1e2e, argb:54815ba4, #ef6155
+rofi.color-active: argb:272f1e2e, #815ba4, argb:2f2f1e2e, argb:54815ba4, #815ba4
+rofi.color-window: #2f1e2e, argb:36ef6155, argb:2fef6155
+rofi.separator-style: dash
