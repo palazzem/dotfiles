@@ -1,5 +1,9 @@
 #! /bin/sh
-. panel_colors
+
+# loading configurations
+. ~/.config/bspwm/panel_config
+. ~/.config/bspwm/panel_colors
+. ~/.config/bspwm/custom_config
 
 num_mon=$(bspc query -M | wc -l)
 PADDING="  "

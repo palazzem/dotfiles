@@ -1,9 +1,9 @@
 #! /bin/sh
 
 # loading configurations
-. panel_config
-. panel_colors
-. custom_config
+. ~/.config/bspwm/panel_config
+. ~/.config/bspwm/panel_colors
+. ~/.config/bspwm/custom_config
 
 PANEL_WM_NAME=bspwm_panel
 

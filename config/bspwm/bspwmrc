@@ -1,5 +1,11 @@
 #! /bin/bash
 
+# loading configurations
+. ~/.config/bspwm/panel_config
+. ~/.config/bspwm/panel_colors
+. ~/.config/bspwm/custom_config
+
+# window manager configuration
 bspc config border_width    3
 bspc config window_gap      5
 
@@ -36,7 +42,13 @@ bspwm_panel &
 # we should wait at least 1 second otherwise the panel will
 # overlap the stalonetray bar
 sleep 1
-stalonetray &
+stalonetray -bg $STALONE_BACKGROUND \
+    --dockapp-mode $STALONE_DOCK_MODE \
+    --geometry $STALONE_GEOMETRY \
+    --grow-gravity $STALONE_GROW_GRAVITY \
+    --icon-gravity $STALONE_GROW_GRAVITY \
+    --icon-size $STALONE_ICON_SIZE \
+    --kludges $STALONE_KLUDGES &
 
 # autostart applications
 bspwm_autostart &
