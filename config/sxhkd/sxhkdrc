@@ -6,10 +6,6 @@
 super + Return
     urxvtc
 
-# volume
-super + {Down,Up}
-    amixer -q set Master 5%{-,+}
-
 # window gap via mouse wheel
 super + button{4,5}
     bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 5))
@@ -77,8 +73,13 @@ XF86KbdBrightness{Down,Up}
 XF86Audio{Raise,Lower}Volume
     amixer set Master 5%{+,-}
 
+# volume
+super + {Down,Up}
+    amixer -q set Master 5%{-,+}
+
 XF86AudioMute
-    amixer set Master toggle
+    pactl set-sink-mute 0 toggle && pactl set-sink-mute 1 toggle
+
 #
 # state/flags
 #
