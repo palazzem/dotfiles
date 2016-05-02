@@ -1,3 +1,6 @@
+! including external resources for customizations
+#include ".Xcustom"
+
 ! clean up urxvt, add keybinds
 URxvt.termName: rxvt-256color
 URxvt.intensityStyles: false
