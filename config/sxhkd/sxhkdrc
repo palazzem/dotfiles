@@ -69,7 +69,7 @@ super + control + 0
 
 # keyboard special buttons
 XF86MonBrightness{Down,Up}
-    xbacklight -{dec,inc} 15
+    xbacklight -{dec,inc} 5
 
 XF86KbdBrightness{Down,Up}
     echo {0,255} > /sys/class/leds/smc::kbd_backlight/brightness
