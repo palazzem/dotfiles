@@ -6,4 +6,3 @@ sleep 1
 # list your services here
 blueman-applet &
 dropbox &
-mopidy &
