@@ -59,13 +59,21 @@ if type archey3 > /dev/null; then
     alias clear='clear; archey3'
     archey3
 fi
+if type archey > /dev/null; then
+    alias clear='clear; archey'
+    archey
+fi
 
 export PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/palazzem/programs/google-cloud-sdk/path.zsh.inc'
+if [ -f '/home/palazzem/programs/google-cloud-sdk/path.zsh.inc' ]; then
+    source '/home/palazzem/programs/google-cloud-sdk/path.zsh.inc'
+fi
 
 # The next line enables shell command completion for gcloud.
-source '/home/palazzem/programs/google-cloud-sdk/completion.zsh.inc'
+if [ -f '/home/palazzem/programs/google-cloud-sdk/completion.zsh.inc' ]; then
+    source '/home/palazzem/programs/google-cloud-sdk/completion.zsh.inc'
+fi
