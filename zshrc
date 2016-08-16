@@ -35,13 +35,8 @@ PATH="$PATH:$GOPATH/bin"
 # Python virtualenvwrapper
 source virtualenvwrapper_lazy.sh
 
-# exports all installed python version (via Pythonz) to
-# the user PATH
-if [[ -s $HOME/.pythonz/etc/bashrc ]]
-then
-    source $HOME/.pythonz/etc/bashrc
-    PATH=$PATH:$(pythonz list -p | awk 'BEGIN {ORS=":"} /^ / {print $2"/bin"}')
-fi
+# Enabling pyenv
+eval "$(pyenv init -)"
 
 # Heroku binary
 PATH="/usr/local/heroku/bin:$PATH"
