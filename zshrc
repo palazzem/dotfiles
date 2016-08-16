@@ -64,7 +64,13 @@ if type archey > /dev/null; then
     archey
 fi
 
-export PATH
+# add coreutils if available
+if [ -f "/usr/local/opt/coreutils/libexec/gnubin" ]; then
+    PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+fi
+
+# evalutating chefdk
+eval "$(/opt/chefdk/bin/chef shell-init $(basename $(echo $SHELL)))"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -77,3 +83,6 @@ fi
 if [ -f '/home/palazzem/programs/google-cloud-sdk/completion.zsh.inc' ]; then
     source '/home/palazzem/programs/google-cloud-sdk/completion.zsh.inc'
 fi
+
+# exporting variables
+export PATH
