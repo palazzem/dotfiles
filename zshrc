@@ -37,6 +37,7 @@ source virtualenvwrapper_lazy.sh
 
 # Enabling pyenv
 eval "$(pyenv init -)"
+pyenv virtualenvwrapper
 
 # Heroku binary
 PATH="/usr/local/heroku/bin:$PATH"
@@ -69,8 +70,8 @@ if [ -f "/usr/local/opt/coreutils/libexec/gnubin" ]; then
     PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 fi
 
-# evalutating chefdk
-eval "$(/opt/chefdk/bin/chef shell-init $(basename $(echo $SHELL)))"
+# ruby env
+eval "$(rbenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
