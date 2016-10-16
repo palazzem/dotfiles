@@ -47,12 +47,7 @@ PATH="$HOME/programs/packer/bin:$PATH"
 PATH="$HOME/programs/terraform/bin:$PATH"
 
 # Node Version Manager
-if [ -f "$HOME/.nvm/nvm.sh" ]; then
-    source "$HOME/.nvm/nvm.sh"
-else
-    export NVM_DIR="$HOME/.nvm"
-    source $(brew --prefix nvm)/nvm.sh
-fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # system information when opening a new shell
 # or after clearing the screen
