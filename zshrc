@@ -1,3 +1,14 @@
+# system information when opening a new shell
+# or after clearing the screen
+if type archey3 > /dev/null; then
+    alias clear='clear; archey3'
+    archey3
+fi
+if type archey > /dev/null; then
+    alias clear='clear; archey -o'
+    archey -o
+fi
+
 # language
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -48,17 +59,6 @@ PATH="$HOME/programs/terraform/bin:$PATH"
 
 # Node Version Manager
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-
-# system information when opening a new shell
-# or after clearing the screen
-if type archey3 > /dev/null; then
-    alias clear='clear; archey3'
-    archey3
-fi
-if type archey > /dev/null; then
-    alias clear='clear; archey'
-    archey
-fi
 
 # add coreutils if available
 if [ -f "/usr/local/opt/coreutils/libexec/gnubin" ]; then
