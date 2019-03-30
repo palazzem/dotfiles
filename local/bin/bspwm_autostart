@@ -1,8 +1,0 @@
-#! /bin/bash
-
-# waiting for system traybar
-sleep 1
-
-# list your services here
-blueman-applet &
-dropbox &

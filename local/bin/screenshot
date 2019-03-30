@@ -1,6 +1,0 @@
-#! /bin/bash
-
-TIMESTAMP=`date +%s`
-FILENAME="screenshot_$TIMESTAMP.png"
-
-import $HOME/pictures/$FILENAME
