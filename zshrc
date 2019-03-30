@@ -34,7 +34,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # adding global local/bin folder
-PATH=/usr/local/bin:$PATH
+PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/sbin:$PATH"
 
 # adding local/bin folder
 PATH=$PATH:$HOME/.local/bin
@@ -82,3 +83,6 @@ fi
 
 # exporting variables
 export PATH
+
+# GPG
+export GPG_TTY=$(tty)
