@@ -22,8 +22,6 @@ export CASE_SENSITIVE="true"
 export DISABLE_AUTO_UPDATE="true"
 export EDITOR="nvim"
 export GPG_TTY=$(tty)
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="norm"
 
