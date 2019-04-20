@@ -34,6 +34,7 @@ source $ZSH/oh-my-zsh.sh
 eval "$(nodenv init -)"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
+eval "$(ssh-agent)" > /dev/null
 
 # Google Cloud SDK
 source '/opt/gcloud/google-cloud-sdk/path.zsh.inc'
