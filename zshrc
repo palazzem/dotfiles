@@ -18,15 +18,15 @@ PATH="$PATH:$HOME/.local/bin"
 PATH="$PATH:$GOPATH/bin"
 
 # Variables
+export LANG="en_US.UTF-8"
 export CASE_SENSITIVE="true"
-export DISABLE_AUTO_UPDATE="true"
 export EDITOR="nvim"
 export GPG_TTY=$(tty)
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="norm"
+export ZSH_THEME="theunraveler"
 
 # Shell
-plugins=(git)
+plugins=(git fzf)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -37,8 +37,8 @@ eval "$(rbenv init -)"
 eval "$(ssh-agent)" > /dev/null
 
 # Google Cloud SDK
-source '/opt/gcloud/google-cloud-sdk/path.zsh.inc'
-source '/opt/gcloud/google-cloud-sdk/completion.zsh.inc'
+source "/opt/gcloud/google-cloud-sdk/path.zsh.inc"
+source "/opt/gcloud/google-cloud-sdk/completion.zsh.inc"
 
 # Exporting $PATH
 export PATH
