@@ -42,7 +42,7 @@ values."
      git
      helm
      markdown
-     python
+     (python :variables python-test-runner 'pytest)
      syntax-checking
      themes-megapack
      version-control
