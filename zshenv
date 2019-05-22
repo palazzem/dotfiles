@@ -23,13 +23,3 @@ source $(which virtualenvwrapper.sh)
 # Google Cloud SDK
 source "/opt/gcloud/google-cloud-sdk/path.zsh.inc"
 source "/opt/gcloud/google-cloud-sdk/completion.zsh.inc"
-
-# System information when opening a new shell or clearing the screen
-if type archey3 > /dev/null; then
-    alias clear='clear; archey3'
-    archey3
-fi
-if type archey > /dev/null; then
-    alias clear='clear; archey -o'
-    archey -o
-fi
