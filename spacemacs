@@ -35,6 +35,8 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(
      auto-completion
+     (dart :variables
+           dart-format-on-save t)
      emacs-lisp
      git
      helm
