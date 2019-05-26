@@ -453,9 +453,35 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-    ;; Remove importmagic hook
-    (remove-hook 'python-mode-hook 'importmagic-mode)
-  )
+  ;; Org Mode
+  ;; --------
+
+  ;; States color
+  (with-eval-after-load 'org
+    (setq org-todo-keyword-faces
+          (quote
+           (("TODO" . "#666666")
+            ("NEXT" . "#dc752f")
+            ("PROGRESS" . "#4f97d7")
+            ("WAITING" . "#b1951d")
+            ("HOLD" . "#b1951d")
+            ("DONE" . "#86dc2f")
+            ("BLOCKED" . "#f2241f")
+            ("CANCELLED" . "#f2241f")))))
+
+  ;; Prevent Done states when subentries are not Done
+  (setq org-enforce-todo-dependencies t)
+
+  ;; Available states
+  (setq org-todo-keywords
+        (quote ((sequence "TODO" "NEXT" "PROGRESS" "BLOCKED" "|" "DONE")
+                (sequence "WAITING" "HOLD" "|" "CANCELLED"))))
+
+  ;; Python Mode
+  ;; -----------
+
+  ;; Remove importmagic hook
+  (remove-hook 'python-mode-hook 'importmagic-mode))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
