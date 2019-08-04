@@ -2,6 +2,7 @@
 ZSH_THEME="theunraveler"
 CASE_SENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git fzf)
 
