@@ -13,12 +13,13 @@ source $ZSH/oh-my-zsh.sh
 # Extend Shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# System information when opening a new shell or clearing the screen
+# Check Archey version
 if type archey3 > /dev/null; then
-    alias clear='clear; archey3'
-    archey3
+    ARCHEY_BIN="archey3"
+else
+    ARCHEY_BIN="archey -o"
 fi
-if type archey > /dev/null; then
-    alias clear='clear; archey -o'
-    archey -o
-fi
+
+# Set the alias and clear the screen
+alias clear="clear; $ARCHEY_BIN"
+clear
