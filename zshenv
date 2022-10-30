@@ -19,9 +19,7 @@ export PATH
 export ANDROID_HOME
 
 # Initializing *env
-eval "$(nodenv init -)"
 eval "$(pyenv init -)"
-eval "$(rbenv init -)"
 eval "$(ssh-agent)" > /dev/null
 
 # Python Virtualenv
