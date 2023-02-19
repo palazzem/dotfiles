@@ -26,5 +26,6 @@ else
 fi
 
 # Set the alias and clear the screen
+alias vim="nvim"
 alias clear="clear; $ARCHEY_BIN"
 clear
