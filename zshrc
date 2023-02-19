@@ -6,11 +6,6 @@ DISABLE_MAGIC_FUNCTIONS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git fzf)
 
-# Configure Brew
-if type /opt/homebrew/bin/brew > /dev/null; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 # Extend ZSH
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh

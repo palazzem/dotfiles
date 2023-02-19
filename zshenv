@@ -1,3 +1,6 @@
+# Configure Brew (if OSX)
+[ -f /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Variables
 export EDITOR="nvim"
 export GOPATH="$HOME/programs/go"
