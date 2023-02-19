@@ -22,7 +22,7 @@ export PATH
 export ANDROID_HOME
 
 # Initializing *env
-eval "$(pyenv init -)"
+[ -f pyenv ] && eval "$(pyenv init -)"
 eval "$(ssh-agent)" > /dev/null
 
 # Python Virtualenv
