@@ -25,9 +25,6 @@ export ANDROID_HOME
 [ -f pyenv ] && eval "$(pyenv init -)"
 eval "$(ssh-agent)" > /dev/null
 
-# Python Virtualenv
-source $(which virtualenvwrapper.sh)
-
 # Google Cloud SDK
 source "/opt/gcloud/google-cloud-sdk/path.zsh.inc"
 source "/opt/gcloud/google-cloud-sdk/completion.zsh.inc"
