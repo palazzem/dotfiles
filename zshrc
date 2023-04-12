@@ -1,6 +1,4 @@
 # Configuration
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
 ZSH_THEME="theunraveler"
 CASE_SENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"

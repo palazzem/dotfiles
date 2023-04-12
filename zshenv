@@ -2,10 +2,11 @@
 [ -f /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Variables
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 export EDITOR="nvim"
 export GOPATH="$HOME/programs/go"
 export GPG_TTY=$(tty)
-export LANG="en_US.UTF-8"
 
 # Paths
 ANDROID_HOME="$HOME/programs/android"
