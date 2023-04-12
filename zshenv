@@ -23,7 +23,7 @@ export PATH
 export ANDROID_HOME
 
 # Initializing *env
-[ -f pyenv ] && eval "$(pyenv init -)"
+command -v pyenv >/dev/null && eval "$(pyenv init -)"
 eval "$(ssh-agent)" > /dev/null
 
 # Google Cloud SDK
