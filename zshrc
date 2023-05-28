@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Extend Shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(direnv hook zsh)"
 
 # Check Archey version
 if type archey3 > /dev/null; then
