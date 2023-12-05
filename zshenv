@@ -20,6 +20,18 @@ export PATH
 command -v pyenv >/dev/null && eval "$(pyenv init -)"
 eval "$(ssh-agent)" > /dev/null
 
-# Google Cloud SDK
-source "/opt/gcloud/google-cloud-sdk/path.zsh.inc"
-source "/opt/gcloud/google-cloud-sdk/completion.zsh.inc"
+# Determine the Google Cloud SDK directory
+if [[ -d "$HOME/bin/google-cloud-sdk" ]]; then
+    GCLOUD_SDK_DIR="$HOME/bin/google-cloud-sdk"
+elif [[ -d "/opt/gcloud/google-cloud-sdk" ]]; then
+    GCLOUD_SDK_DIR="/opt/gcloud/google-cloud-sdk"
+else
+    echo "Google Cloud SDK directory not found."
+    GCLOUD_SDK_DIR=""
+fi
+
+# Source the files if the directory is set
+if [[ -n $GCLOUD_SDK_DIR ]]; then
+    source "$GCLOUD_SDK_DIR/path.zsh.inc"
+    source "$GCLOUD_SDK_DIR/completion.zsh.inc"
+fi
