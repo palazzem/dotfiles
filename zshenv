@@ -6,7 +6,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR="nvim"
 export GOPATH="$HOME/programs/go"
-export GPG_TTY=$(tty)
+export GPG_TTY=`tty`
 
 # Paths
 ANDROID_HOME="$HOME/programs/android"
