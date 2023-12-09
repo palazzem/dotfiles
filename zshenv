@@ -1,4 +1,4 @@
-# Configure Brew (if OSX)
+# Configure Homebrew (OSX only)
 [ -f /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Variables
