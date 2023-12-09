@@ -18,7 +18,9 @@ export PATH
 
 # Initializing *env
 command -v pyenv >/dev/null && eval "$(pyenv init -)"
-eval "$(ssh-agent)" > /dev/null
+
+# Expect SSH agent forwarding if in a dev container
+[ -z "$DEV_CONTAINER" ] || [ "$DEV_CONTAINER" != "1" ] && eval "$(ssh-agent)" > /dev/null
 
 # Determine the Google Cloud SDK directory
 if [[ -d "$HOME/bin/google-cloud-sdk" ]]; then
