@@ -13,6 +13,12 @@ source $ZSH/oh-my-zsh.sh
 # Extend Shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Initializing *env
+which pyenv > /dev/null && eval "$(pyenv init -)"
+
+# Expect SSH agent forwarding if in a dev container
+[ -z "$DEV_CONTAINER" ] || [ "$DEV_CONTAINER" != "1" ] && eval "$(ssh-agent)" > /dev/null
+
 # Check Archey version
 if type archey3 > /dev/null; then
     ARCHEY_BIN="archey3"
