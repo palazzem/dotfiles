@@ -19,14 +19,7 @@ which pyenv > /dev/null && eval "$(pyenv init -)"
 # Expect SSH agent forwarding if in a dev container
 [ -z "$DEV_CONTAINER" ] || [ "$DEV_CONTAINER" != "1" ] && eval "$(ssh-agent)" > /dev/null
 
-# Check Archey version
-if type archey3 > /dev/null; then
-    ARCHEY_BIN="archey3"
-else
-    ARCHEY_BIN="archey"
-fi
-
 # Set the alias and clear the screen
 alias vim="nvim"
-alias clear="clear; $ARCHEY_BIN"
+alias clear="clear; neofetch"
 clear
