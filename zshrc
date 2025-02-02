@@ -23,5 +23,4 @@ eval "$(pyenv init - bash)"
 
 # Set the alias and clear the screen
 alias vim="nvim"
-alias clear="clear; fastfetch"
-clear
+clear && fastfetch -c all.jsonc
