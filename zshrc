@@ -23,5 +23,5 @@ eval "$(pyenv init - bash)"
 
 # Set the alias and clear the screen
 alias vim="nvim"
-alias clear="clear; neofetch"
+alias clear="clear; fastfetch"
 clear
