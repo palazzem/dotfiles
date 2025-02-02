@@ -13,8 +13,10 @@ source $ZSH/oh-my-zsh.sh
 # Extend Shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Initializing *env
-which pyenv > /dev/null && eval "$(pyenv init -)"
+# Initializing pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
 
 # Expect SSH agent forwarding if in a dev container
 [ -z "$DEV_CONTAINER" ] || [ "$DEV_CONTAINER" != "1" ] && eval "$(ssh-agent)" > /dev/null
