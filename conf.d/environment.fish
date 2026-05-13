@@ -1,0 +1,28 @@
+# Environment variables and PATH configuration.
+# Loaded automatically by fish for all sessions (login, interactive, script).
+
+# Locale
+set -gx LANG en_US.UTF-8
+set -gx LC_ALL en_US.UTF-8
+set -gx LC_CTYPE en_US.UTF-8
+
+# Editor
+set -gx EDITOR nvim
+
+# Go
+set -gx GOPATH $HOME/programs/go
+
+# GPG
+set -gx GPG_TTY (tty)
+
+# PATH
+fish_add_path $HOME/.local/bin
+fish_add_path $GOPATH/bin
+
+# Google Cloud SDK
+if test -f $HOME/.local/share/google-cloud-sdk/path.fish.inc
+    source $HOME/.local/share/google-cloud-sdk/path.fish.inc
+end
+if test -f $HOME/.local/share/google-cloud-sdk/completion.fish.inc
+    source $HOME/.local/share/google-cloud-sdk/completion.fish.inc
+end
