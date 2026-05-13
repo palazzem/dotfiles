@@ -12,8 +12,9 @@ set -gx EDITOR nvim
 # Go
 set -gx GOPATH $HOME/programs/go
 
-# GPG
-set -gx GPG_TTY (tty)
+# ssh-agent — use the systemd user service socket.
+# Requires: systemctl --user enable --now ssh-agent
+set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # PATH
 fish_add_path $HOME/.local/bin
