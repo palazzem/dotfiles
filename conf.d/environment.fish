@@ -15,6 +15,9 @@ set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
 fish_add_path $HOME/.local/bin
 fish_add_path $GOPATH/bin
 
+# fnm — activates the default Node version and puts npm-global bins on PATH.
+fnm env --use-on-cd --shell fish | source
+
 # Google Cloud SDK
 if test -f $HOME/.local/share/google-cloud-sdk/path.fish.inc
     source $HOME/.local/share/google-cloud-sdk/path.fish.inc
